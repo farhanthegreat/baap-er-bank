@@ -16,21 +16,45 @@
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
                 <div class="bg-rose-500 p-8 rounded-xl">
                     <h4 class="text-2xl">Deposit</h4>
-                    <h2 class="text-5xl">$0</h2>
+                    <h2 id="deposit-collection" class="text-5xl">$0</h2>
                 </div>
                 <div class="bg-orange-400 p-8 rounded-xl">
                     <h4 class="text-2xl">Withdraw</h4>
-                    <h2 class="text-5xl">$0</h2>
+                    <h2 id="withdraw-collection" class="text-5xl">$0</h2>
                 </div>
                 <div class="bg-green-500 p-8 rounded-xl">
                     <h4 class="text-2xl">Balance</h4>
-                    <h2 class="text-5xl">$1250</h2>
+                    <h2 id="balance-collection" class="text-5xl">$1250</h2>
                 </div>
                 
             </div>
+
+        </section>
+        <!-- deposit and withdraw -->
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-fuchsia-500 p-8 rounded-xl">
+                    <h4 class="text-2xl mb-4">Please Deposit</h4>
+                    
+                    <input class="w-9/12 block mb-2 px-3 rounded-md text-black" type="email" name="" id="deposit-amount" placeholder="Enter Amount You Want to Deposit">
+                 
+                    <button id="btn-deposit" class="bg-amber-600 hover:bg-sky-600 px-8 py-2 text-white font-medium rounded-lg mb-4">Deposit</button>
+                </div>
+
+                <div class="bg-sky-500 p-8 rounded-xl">
+                    <h4 class="text-2xl mb-4">Please Withdraw</h4>
+                    <input class="w-9/12 block mb-2 px-3 rounded-md text-black" type="email" name="" id="withdraw-amount" placeholder="Enter Amount You Want to Withdraw">
+                 
+                    <button id="btn-withdraw" class="bg-amber-600 hover:bg-rose-600 px-8 py-2 text-white font-medium rounded-lg">Withdraw</button>
+                </div>
+                
+                
+            </div>
+
         </section>
 
     </main>
     
+    <script src="js/bank.js"></script>
 </body>
 </html>
